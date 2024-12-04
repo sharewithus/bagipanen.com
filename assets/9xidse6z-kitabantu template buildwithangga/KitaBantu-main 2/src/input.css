@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styling the background bar */
+progress::-webkit-progress-bar {
+    background-color: #E8E9EE;
+}
+
+progress::-webkit-progress-value {
+    background-color: #76AE43;
+    border-radius: 50px;
+}
+
+/* Firefox */
+progress::-moz-progress-bar {
+    background-color: #76AE43;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 300ms ease-in-out;
+}
